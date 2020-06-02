@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Sign up Form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./public/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h2>Learn to code by <br> watching others</h2>
+            <p class="title-text">See how experienced developers solve problems in real-time. <br> Watching scripted tutorials is great, but understanding how <br> developers think is invaluable. </p>
+        </div>
+
+        <div class="content">
+
+            <button class="button-try-free"><b>Try it free 7 days</b> then $20/mo. thereafter</button>
+
+            <div class="form-group">
+
+                <form action>
+
+                    <div class="form-control">
+                        <input type="text" placeholder="First Name" id="First_Name" required>
+                        <img src="images/icon-error.svg" alt="" id="icon_error1" class="icon_error">
+                        <span id="note1" class="note"> </span>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="text" placeholder="Last Name" id="Last_Name" required>
+                        <img src="images/icon-error.svg" alt="" id="icon_error2" class="icon_error">
+                        <span id="note2" class="note"> </span>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="email" placeholder="Email Address" id="email" required>
+                        <img src="images/icon-error.svg" alt="" id="icon_error3" class="icon_error">
+                        <span id="note3" class="note"> </span>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" placeholder="Password" id="password" required>
+                        <img src="images/icon-error.svg" alt="" id="icon_error4" class="icon_error">
+                        <span id="note4" class="note"> </span>
+                    </div>
+
+                    <input type="submit" class="button-claim" value="Claim your free trial" onclick="submitForm()">
+
+                    <p class="term-services">
+                        <span class="temp">By clicking the button, you are agreeing to our</span>
+                        <a href="javascript:;" class="temp-font">Terms and Services</a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./public/script.js"></script>
+
+</html>
